@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CartColumns from './CartColumns';
+
 
 class EmptyCart extends Component {
     render() {

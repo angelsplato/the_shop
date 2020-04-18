@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { ProductConsumer } from "../components/context";
-import { ButtomConatiner, ButtonContainer } from "./Button";
+import { ButtonContainer } from "./Button";
 import { Link } from "react-router-dom";
 
 class Modal extends Component {
