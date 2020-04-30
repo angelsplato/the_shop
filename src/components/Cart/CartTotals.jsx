@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { ButtonContainer } from "../Button";
 
 export default function CartTotals({ value }) {
   const { cartSubtotal, cartTax, cartTotal, clearCart } = value;
@@ -14,7 +15,9 @@ export default function CartTotals({ value }) {
                 className="btn btn-outline-danger text-upppercase mb-3 px-5"
                 type="button"
                 onClick={() => clearCart()}
-              ></div>
+              >
+                Clear Cart
+              </div>
             </Link>
 
             <h5>
@@ -31,6 +34,9 @@ export default function CartTotals({ value }) {
               <span className="text-title">total :</span>
               <strong>$ {cartTotal}</strong>
             </h5>
+            <Link to="/adress">
+              <ButtonContainer>Order</ButtonContainer>
+            </Link>
           </div>
         </div>
       </div>

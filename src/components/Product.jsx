@@ -88,7 +88,7 @@ const ProductWrapper = styled.div`
 
   .img-container {
     position: relative;
-    overlfow: hidden;
+    overflow: hidden;
   }
   .card-img-top {
     transition: all 1s linear;

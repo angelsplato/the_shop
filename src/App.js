@@ -8,6 +8,7 @@ import ProductList from './components/ProductList'
 import Details from './components/Details'
 import Cart from './components/Cart/'
 import Modal from './components/Modal'
+import DeliveryDetails from './components/DeliveryDetails'
 import Default from './components/Default'
 
 
@@ -20,6 +21,7 @@ function App() {
   <Route  exact path='/' component={ProductList}></Route>
   <Route path='/details' component={Details}></Route>
   <Route path='/cart' component={Cart}></Route>
+  <Route path='/adress' component={DeliveryDetails}></Route>
   <Route  component={Default}></Route>
 </Switch>
 <Modal/>

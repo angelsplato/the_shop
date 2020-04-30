@@ -11,9 +11,9 @@ class CartColumns extends Component {
           <div className="col-10 mx-auto col-lg-2">
             <p className="text-uppercase">name of product</p>
           </div>
-          <div className="col-10 mx-auto col-lg-2">
+          {/* <div className="col-10 mx-auto col-lg-2">
             <p className="text-uppercase">products</p>
-          </div>
+          </div> */}
           <div className="col-10 mx-auto col-lg-2">
             <p className="text-uppercase">price</p>
           </div>
@@ -21,10 +21,10 @@ class CartColumns extends Component {
             <p className="text-uppercase">quantity</p>
           </div>
           <div className="col-10 mx-auto col-lg-2">
-            <p className="text-uppercase">remove</p>
+            <p className="text-uppercase">total</p>
           </div>
           <div className="col-10 mx-auto col-lg-2">
-            <p className="text-uppercase">total</p>
+            <p className="text-uppercase">remove</p>
           </div>
         </div>
       </div>
