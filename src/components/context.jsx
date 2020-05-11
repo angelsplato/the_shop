@@ -11,6 +11,7 @@ class ProductProvider extends Component {
     detailProduct: detailProduct,
     cart: [],
     modalOpen: false,
+    paymentOpen: false,
     modalProduct: detailProduct,
     cartSubtotal: 0,
     cartTax: 0,
@@ -68,6 +69,18 @@ class ProductProvider extends Component {
     });
   };
 
+  openPayment = () => {
+    this.setState(() => {
+      return { paymentOpen: true };
+    });
+  };
+
+  closePayment = () => {
+    this.setState(() => {
+      return { paymentOpen: false };
+    });
+  };
+  openPayment;
   closeModal = () => {
     this.setState(() => {
       return { modalOpen: false };
@@ -105,7 +118,7 @@ class ProductProvider extends Component {
         () => {
           return { cart: [...tempCart] };
         },
-  
+
         () => {
           this.addTotals();
         }
@@ -169,6 +182,8 @@ class ProductProvider extends Component {
           decrement: this.decrement,
           removeItem: this.removeItem,
           clearCart: this.clearCart,
+          openPayment : this.openPayment,
+          closePayment: this.closePayment
         }}
       >
         {this.props.children}

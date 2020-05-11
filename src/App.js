@@ -10,6 +10,7 @@ import Cart from './components/Cart/'
 import Modal from './components/Modal'
 import DeliveryDetails from './components/DeliveryDetails'
 import Default from './components/Default'
+import Payment from './components/Payment'
 
 
 
@@ -25,6 +26,7 @@ function App() {
   <Route  component={Default}></Route>
 </Switch>
 <Modal/>
+<Payment/>
 </React.Fragment>
   
   );

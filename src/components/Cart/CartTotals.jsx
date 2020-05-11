@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ButtonContainer } from "../Button";
 
 export default function CartTotals({ value }) {
-  const { cartSubtotal, cartTax, cartTotal, clearCart } = value;
+  const { cartSubtotal, cartTax, cartTotal, clearCart ,openPayment} = value;
 
   return (
     <React.Fragment>
@@ -34,9 +34,11 @@ export default function CartTotals({ value }) {
               <span className="text-title">total :</span>
               <strong>$ {cartTotal}</strong>
             </h5>
-            <Link to="/adress">
-              <ButtonContainer>Order</ButtonContainer>
-            </Link>
+              <ButtonContainer onClick={() => {
+                    openPayment();
+
+                  }}>Order</ButtonContainer>
+
           </div>
         </div>
       </div>
