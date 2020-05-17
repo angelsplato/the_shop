@@ -26,8 +26,9 @@ class Payment extends Component {
                           {cartTotal}
                         </strong>
                       </h6>
-                      <h7>Please enter your ecocash number below</h7>
+                      <h7>Please enter your details number below</h7>
                       <div class="input-group mb-3">
+                        
                         <div class="input-group-prepend">
                           <button class="btn btn-outline-success" type="button">
                             Pay
@@ -75,9 +76,13 @@ const PaymentModal = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  .form-control {
+    width: 75%;
+  }
+
   #modal {
     background: var(--mainWhite);
-    width: 50%;
+    width: 600px;
     height: 70%;
   }
 `;
